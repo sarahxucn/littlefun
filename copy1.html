@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Underwater Animals</title>
+    <!--<link rel="stylesheet" tyep ="text/css" href="copy1.css">-->
+    <style>
+    html, body {
+    margin:0;
+    padding:0;
+    background-color:rgb(27, 82, 155);
+    background-image:linear-graddient(1000deg, #4a7892 0%, #00a4a4 74%);
+    
+    /*background-image: url("https://github.com/sarahxucn/littlefun/blob/master/sea1.png?raw=true");
+    background-repeat:space;
+    background-size: cover;*/
+}
+
+/*.frame {
+    overflow: hidden;
+    width:800px;
+    height:600px;
+    border-radius:50%;
+    position:absolute;
+    left:50%;
+    background-color:#3668b3;
+    background-image:linear-graddient(1000deg, #4a7892 0%, #00a4a4 74%);
+    top:50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #6a8794;
+    box-shadow: 0 0 10px 5px rgb(66, 64, 64);
+}*/
+
+.yellowhaima {
+    position:relative;
+    width:80%;
+    height:500px;
+    margin-left:-235px;
+    position:absolute;
+    animation: swim 20s;
+    -webkit-animation:swim 20s;
+    animation-iteration-count:infinite;
+    -webkit-animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    -webkit-animation-timing-function:linear;
+}
+
+.dimian {
+    position: fixed;
+    padding:20px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+}
+.haigui, .haima {
+    position: fixed;
+    margin-bottom:100px;
+    margin-right:1px;
+    animation: haima 8s;
+    animation-timing-function: linear; 
+    animation-iteration-count: infinite;
+}
+.wuze {
+    position:absolute;
+    margin-top:100px;
+    width:10px;
+    height:10px;
+    margin-left:-235px;
+    position:absolute;
+    animation: jump 20s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.fish {
+    position:absolute;
+    margin-top:120px;
+    width:10px;
+    height:10px;
+    margin-left:-235px;
+    animation: swim 20s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.hongbao1 {
+    margin-left:30px;
+    animation: swim 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.hongbao2 {
+    position:fixed;
+    margin-top:20px;
+    margin-left:-235px;
+    animation: swim 10s;
+    animation-iteration-count:infinite;
+    animation-timing-function: linear;
+}
+.hongbao3 {
+    position:fixed;
+    margin-top:20px;
+    margin-left:-235px;
+    animation: swim 8s;
+    animation-iteration-count:infinite;
+    animation-timing-function: cubic-bezier(0.1, 0.2, 0.1, 0.2);
+}
+@-webkit-keyframes swim {
+    0% {margin-left:-235px;}
+    90% {margin-left:100%;}
+    100% {margin-left:50%;}
+}
+@keyframes swim {
+    0% {margin-left: -235px;}
+    70% {margin-left: 100%;}
+    100% {margin-left:50%}
+}
+
+@keyframes jump {
+    0% {margin-top:-235px;}
+    50% {margin-top:50%;}
+    70% {margin-left:80%;}
+    100% {margin-left:10%;}
+}
+@keyframes haima {
+    0% {height:20px;}
+    50% {height:25%;}
+    100% {height:15%;}
+}
+
+.bubble-frame {
+    position:absolute;
+    width: 580px;
+    height: 600px;
+}
+
+.bubbles {
+    position: absolute;
+    border: 1px solid white;
+    box-shadow: 0 0 3px 0 goldenrod;
+    border-radius: 50%;
+}
+.small {
+    width:20px;
+    height:20px;
+    -webkit-animation:animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    -moz-animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+    animation: animateBubble 25s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+.medium {
+    width: 10px;
+    height: 10px;
+    -webkit-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	-moz-animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+	animation: animateBubble 15s linear infinite, sideWays 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes animateBubble {
+    0% {margin-top:1000px;}
+    100% {margin-top:-100%;}
+}
+
+@-moz-keyframes animateBubble {
+    0% {margin-top:1000px;}
+    100% {margin-top:-100%;}
+}
+
+@keyframes animateBubble {
+    0% {margin-top:1000px;}
+    100% {margin-top:-100%}
+}
+@-webkit-keyframes sideWays {
+    0% {margin-left:0px;}
+    100% {margin-left:50px;}
+}
+@keyframes sideWays {
+    0% {
+        margin-left:0px;
+    }
+    100% {margin-left:50px;}
+}
+
+    </style>
+    
+</head>
+<body>
+    <div class="frame">
+            <div class="bubble-frame">
+                <div style="left:35%;" class="bubbles small"></div>
+                <div style="left:60%;" class="bubbles medium"></div>
+                <div style="left:80%;" class="bubbles small"></div>
+                <div style="left:20%;" class="bubbles medium"></div>
+            </div>
+            <div clas="animals">
+                <div class="animals-frame">
+                    <div style="top:35%;" class="wuze"><img src="https://github.com/sarahxucn/littlefun/blob/master/%E4%B9%8C%E8%B4%BC.png?raw=true" width="150" height ="150"></div>
+                        <div style="bottom:0%;" class="haigui"><img src="https://github.com/sarahxucn/littlefun/blob/master/%E6%B5%B7%E9%BE%9F.png?raw=true" width="180" height="190"></div>
+                        <div style="right:10%; bottom:10%" class="haima"><img src="https://github.com/sarahxucn/littlefun/blob/master/%E6%B5%B7%E9%A9%AC.png?raw=true" width="130" height="160"></div>
+                        <div style="left:20%;top:50%;" class="yellowhaima"><img src="https://github.com/sarahxucn/littlefun/blob/master/%E6%B5%B7%E9%A9%AC%E9%BB%84.png?raw=true" width="130" height="160"></div>
+                        <div style="left:10%" class="fish"><img src="https://github.com/sarahxucn/littlefun/blob/master/fish.png?raw=true" height="200" width="200"></div>
+                        <div style="top:30%" class="hongbao1"><img src="https://github.com/sarahxucn/littlefun/blob/master/167.png?raw=true" height="200" width="250"></div>
+                        <div style="bottom:20%" class="hongbao2"><img src="https://github.com/sarahxucn/littlefun/blob/master/50.png?raw=true" height="400" width="400"></div>
+                        <div style="bottom:50%" class="hongbao3"><img src="https://github.com/sarahxucn/littlefun/blob/master/50.png?raw=true" height="400" width="400"></div>
+                        
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
